@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url("bg.jpg") no-repeat center center fixed; /* Change "bg.jpg" to your image path */
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas (card) */
+.container {
+    background: rgba(30, 30, 30, 0.95); /* Dark semi-transparent container */
+    width: 450px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text for dark background */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #666666;
+    outline: none;
+    font-size: 14px;
+    background: #222222;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+button {
+    margin-left: 10px;
+    padding: 12px 18px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4d4d;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+li {
+    background: #444444;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: #555555;
+}
+
+a {
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #ff4d4d;
+}
