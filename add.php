@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->close();
     }
 }
-header("Location: main_page.php");
+header("Location: index.php");
 exit();
 ?>
+
