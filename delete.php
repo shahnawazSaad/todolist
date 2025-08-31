@@ -8,6 +8,7 @@ if (isset($_GET['id'])) {
     $stmt->execute();
     $stmt->close();
 }
-header("Location: main_page.php");
+header("Location: index.php");
 exit();
 ?>
+
